@@ -2,8 +2,8 @@
   "schema": 1,
   "courseId": 2074,
   "repository": "LearningOS/2026a-oscamp-base-ghjdegithub",
-  "commit": "2702bb0d07c980028aa627c3e06ff752b611cd93",
-  "score": 50,
+  "commit": "0f0207dba58b8c9fd9701b89caf7c26b6e28edfb",
+  "score": 55,
   "totalScore": 100,
   "exercises": [
     {
@@ -58,9 +58,9 @@
     {
       "name": "syscall_wrapper",
       "max": 5,
-      "score": 0,
-      "status": "fail",
-      "exitCode": 101
+      "score": 5,
+      "status": "pass",
+      "exitCode": 0
     },
     {
       "name": "fd_table",
@@ -176,9 +176,9 @@
     }
   ],
   "student": "ghjdegithub",
-  "runId": "43452728352",
+  "runId": "43453743872",
   "runAttempt": "1",
   "upload": {
-    "status": "accepted"
+    "status": "pending"
   }
 }
