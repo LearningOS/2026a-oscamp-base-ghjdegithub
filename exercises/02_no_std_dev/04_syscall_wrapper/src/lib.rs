@@ -62,10 +62,10 @@ pub fn x86_64_abi() -> SyscallABI {
         ret_reg: "rax",
         arg_regs: &["rdi", "rsi", "rdx", "r10", "r8", "r9"],
         clobbered: &["rcx", "r11"],
-        sys_write: NATIVE_SYS_WRITE,
-        sys_read: NATIVE_SYS_READ,
-        sys_close: NATIVE_SYS_CLOSE,
-        sys_exit: NATIVE_SYS_EXIT,
+        sys_write: 1,
+        sys_read: 0,
+        sys_close: 3,
+        sys_exit: 60,
     }
 }
 
@@ -79,11 +79,11 @@ pub fn aarch64_abi() -> SyscallABI {
         id_reg: "x8",
         ret_reg: "x0",
         arg_regs: &["x0", "x1", "x2", "x3", "x4", "x5"],
-        clobbered: &["x16", "x17"],
-        sys_write: NATIVE_SYS_WRITE,
-        sys_read: NATIVE_SYS_READ,
-        sys_close: NATIVE_SYS_CLOSE,
-        sys_exit: NATIVE_SYS_EXIT,
+        clobbered: &[],
+        sys_write: 64,
+        sys_read: 63,
+        sys_close: 57,
+        sys_exit: 93,
     }
 }
 
@@ -97,11 +97,11 @@ pub fn riscv64_abi() -> SyscallABI {
         id_reg: "a7",
         ret_reg: "a0",
         arg_regs: &["a0", "a1", "a2", "a3", "a4", "a5"],
-        clobbered: &["t0", "t1", "t2", "t3", "t4", "t5", "t6"],
-        sys_write: NATIVE_SYS_WRITE,
-        sys_read: NATIVE_SYS_READ,
-        sys_close: NATIVE_SYS_CLOSE,
-        sys_exit: NATIVE_SYS_EXIT,
+        clobbered: &[],
+        sys_write: 64,
+        sys_read: 63,
+        sys_close: 57,
+        sys_exit: 93,
     }
 }
 
